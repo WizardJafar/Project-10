@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="watch.css">
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Card</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="watch.html">Time in Tashkent</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="hero">
+          <div class="container">
+            <div class="clock">
+              <span id="hrs">00</span>
+              <span>:</span>
+              <span id="min">00</span>
+              <span>:</span>
+              <span id="sec">00</span>
+            </div>
+          </div>
+    </div>
+
+    <script>
+    let hrs = document.getElementById("hrs");
+    let min = document.getElementById("min");
+    let sec = document.getElementById("sec");
+
+    setInterval(()=>{
+        let currentTime = new Date();
+
+        hrs.innerHTML = currentTime.getHours() < 10 ? "0" + currentTime.getHours() : currentTime.getHours();
+        min.innerHTML = currentTime.getMinutes() < 10 ? "0" + currentTime.getMinutes() : currentTime.getMinutes();
+        sec.innerHTML = currentTime.getSeconds() < 10 ? "0" + currentTime.getSeconds() : currentTime.getSeconds();
+    }, 1000);
+</script>
+
+    
+
+</body>
+</html>

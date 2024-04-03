@@ -1,0 +1,174 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    background: hsla(33, 100%, 53%, 1);
+
+    background: linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    
+    background: -moz-linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    
+    background: -webkit-linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF930F", endColorstr="#FFF95B", GradientType=1 );
+    color: white;
+    position: relative;
+}
+
+.container{
+    width: 880px;
+    height: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.clock{
+    width: 100%;
+    height: 100%;
+    background: rgba(235, 0, 255, 0.11);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(40px);
+}
+
+.container::before{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #f41b75;
+    border-radius: 5px;
+    position: absolute;
+    left: -50px;
+    top: -50px;
+    z-index: -1;
+}
+
+.container::after{
+    content: '';
+    width: 180px;
+    height: 180px;
+    background: #419aff;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
+    z-index: -1;
+}
+
+.clock span{
+    font-size: 80px;
+    width: 110px;
+    text-align: center;
+    position: relative;
+}
+
+.clock span::after{
+
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#hrs::after {
+    content: "HOURS";
+}
+
+#min::after {
+    content: "MINS";
+}
+
+#sec::after {
+    content: "SEC";
+}
+
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header{
+    font-size: 32px;
+    padding: 30px 0;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+}
+
+.card{
+    margin-top: 20px;
+    width: 330px;
+    border: 1px solid #ccc;
+    /* flex: 1; */
+    padding: 20px 10px;
+    border-radius: 5px;
+}
+
+nav a {
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+  }
+  nav a:hover,
+  nav a.active {
+    background-color: #359381;
+    color: #f9f9f9;
+  }
+  
+  nav a {
+    color: #ffffff;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+  }
+  nav a:hover,
+  nav a.active {
+    background: hsla(42, 93%, 57%, 1);
+
+background: radial-gradient(circle, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(42, 93%, 57%, 1) 0%, hsla(358, 78%, 62%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#F7BA2C", endColorstr="#EA5459", GradientType=1 );
+    color: #000000;
+  }
+  
+  nav{
+    background: hsla(33, 100%, 53%, 1);
+
+background: linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+background: -moz-linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+background: -webkit-linear-gradient(135deg, hsla(33, 100%, 53%, 1) 0%, hsla(58, 100%, 68%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF930F", endColorstr="#FFF95B", GradientType=1 );
+  }
